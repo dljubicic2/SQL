@@ -57,16 +57,18 @@ values ('kupe','Mazda','RX7','benzin','1992-05-21',106.000,4),
 ('monovolumen','Renult','Espace','dizel','2017-04-2',64.500,2),
 ('SUV','Jaguar','F-Pace','benzin','2020-01-13','29.980',3);
 
-insert into Oglas (Vozilo,Naslov,Opis,Osoba,Cijena)
-values (4,'Renault Espace INITIALE PARIS 1.6 DCI','Vozilo vozilo jedan vlasnik, cijena bez prijenosa vlasništva',1,'23.000'),
-(1,'Mazda RX7 Turbo 2','U dobrom stanju, cijena fiksna',2,'15.950'),
-(5,'Jaugar F-Pace SVR AWD','Kuka za prikolicu, el. retrovizori, funcija memorije i ambijentalna svijetla, automobil maksmialno ocuvan',3,'69.599'),
-(2,'Audi A6 40 TDI SPORT QUATTRO S LINE','Besprijekorno stanje, servisi odradjeni',4,'36.990'),
-(3,'Vokswagen Passat Variant 2.0 TDI Higline','Odradjen kompletan servis, originalnih 179.000 km',5,'4.500');
+insert into Oglas (Naslov,Opis,Osoba,Cijena)
+values ('Renault Espace INITIALE PARIS 1.6 DCI','Vozilo vozilo jedan vlasnik, cijena bez prijenosa vlasništva',1,'23.000'),
+('Mazda RX7 Turbo 2','U dobrom stanju, cijena fiksna',2,'15.950'),
+('Jaugar F-Pace SVR AWD','Kuka za prikolicu, el. retrovizori, funcija memorije i ambijentalna svijetla, automobil maksmialno ocuvan',3,'69.599'),
+('Audi A6 40 TDI SPORT QUATTRO S LINE','Besprijekorno stanje, servisi odradjeni',4,'36.990'),
+('Vokswagen Passat Variant 2.0 TDI Higline','Odradjen kompletan servis, originalnih 179.000 km',5,'4.500');
 
-insert into Upit (Oglas,Pitanje,Osoba)
-values (3,'da li je vozilo jos dostupno',2),
-(1,'mozete li mi poslati jos slika',5),
-(5,'Zanima me kilometraža vozila i ispravnost vozila',3),
-(2,'Postovani da li je klima ispravna',1),
-(3,'Da li je to zadnja cijena',4);
+insert into Upit (Oglas,Pitanje,Osoba,Vozilo)
+values (3,'da li je vozilo jos dostupno',2,1),
+(1,'mozete li mi poslati jos slika',5,2),
+(5,'Zanima me kilometraža vozila i ispravnost vozila',3,3),
+(2,'Postovani da li je klima ispravna',1,4),
+(3,'Da li je to zadnja cijena',4,5);
+
+
